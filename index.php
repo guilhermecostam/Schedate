@@ -1,3 +1,14 @@
+<?php
+  include("config_agenda.php");
+      
+  if(isset($_POST['usuario'])) {
+    $usuario = $_POST['usuario'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $consulta =  $MySQLi->query("INSERT INTO TB_USUARIOS (USU_NOME,USU_EMAIL,USU_SENHA) values( '$usuario', '$email','$senha')");
+        header("Location: listar_eventos.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +16,6 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Site feito para Saskia">
   <meta name="author" content="Guilherme Costa de Medeiros">
 
   <title>Schedate</title>
@@ -75,14 +85,19 @@
       <!-- Conteudo -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/image7.jpeg" alt="">
+          <center><form action="?" method="POST">
+              <input placeholder="Digite seu nickname" name="usuario"></input><br><br>
+              <input placeholder="Digite seu email" name='email'></input><br><br>
+              <input placeholder="Digite sua senha" type="password" name="senha"></input><br><br>
+              <button type='submit'>Registrar</button>
+          </form></center>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">Efetue seu cadastro</h4>
-                <p class="mb-0 text-white-50">É necessário criar uma conta para poder ter acesso às funcionalidades do sistema web. <br> Caso ja possua cadastro, clique aqui para logar na sua conta.</p>
+                <p class="mb-0 text-white-50">É necessário criar uma conta para poder ter acesso às funcionalidades do sistema web. <br> Caso ja possua cadastro, <b><a href="login_agenda.php">CLIQUE AQUI</a></b> para logar na sua conta.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
