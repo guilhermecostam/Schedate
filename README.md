@@ -28,8 +28,12 @@ Clone the project with the following command:
 git clone https://github.com/guilhermecostam/Schedate.git
 ```
 
-Then run the application on some server of your choice and use the folder database banco_db.
+Then run the application on some server of your choice and use the folder database `banco_db`.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
+
+---
+
+Made with :zap: by Guilherme Costa. [Get in touch!](https://www.linkedin.com/in/guilhermecostam/)
