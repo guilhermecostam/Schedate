@@ -32,7 +32,7 @@ Then run the application on some server of your choice and use the folder databa
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/guilhermecostam/Schedate/blob/master/LICENSE) page for details.
 
 ---
 
