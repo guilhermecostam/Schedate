@@ -15,7 +15,7 @@ Schedate
 
 ## Features
 
-This app features all the latest tools and practices in mobile development!
+These are the features I used in developing this project.
 
 - **PHP** — General purpose open source scripting language
 - **MySQL** — Database management system
